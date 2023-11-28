@@ -34,9 +34,9 @@ const App = () => {
       <Nav />
 
       <Routes>
-        <Route path='/' element={<Home />}></Route>
-        <Route path='/projects/:projectId' element={<PersonalProject />}></Route>
-        <Route path='/about-resume' element={<About_Resume/>}></Route>
+        <Route path='/madhuka-devinda' element={<Home />}></Route>
+        <Route path='/madhuka-devinda/projects/:projectId' element={<PersonalProject />}></Route>
+        <Route path='/madhuka-devinda/about-resume' element={<About_Resume/>}></Route>
 
       </Routes>
     </>
