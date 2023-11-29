@@ -22,7 +22,7 @@ const portfolio = () => {
                 <div className="portfolio__item-cta">
                   <a href={github} className='btn'>Github</a>
                   {/* <a href={demo} className='btn btn-primary' target='_blank'>More...</a> */}
-                  <Link to={`/projects/${title}`} className='btn btn-primary' target='_blank'>More....</Link>
+                  <Link to={`/madhuka-devinda/projects/${title}`} className='btn btn-primary' target='_blank'>More....</Link>
                 </div>
               </article>
             )
