@@ -1,13 +1,13 @@
-.personal__container{
+.personal__container {
     /* float: left; */
     width: 974px;
     padding-top: 25px;
     padding-left: 25px;
     padding-right: 25px;
-    background-color:var(--color-bg-highlight);
+    background-color: var(--color-bg-highlight);
 }
 
-.title{
+.title {
     height: 50px;
     margin-bottom: 10px;
     border-bottom: 1px dashed #1E1E1E;
@@ -16,23 +16,34 @@
     font-size: 35px;
 }
 
-.project__image{
-    /* background-color: green; */
-    height: 600px;
+iframe {
+    width: 800px;
+    height: 450px;
+
 }
 
-.image__container{
+.project__image {
+    background-color: green;
+    /* height: 600px; */
+    /* max-width: 100%; */
+    height: auto;
+    width: 900px;
+    /* text-align: center; */
+}
+
+.image__container {
     width: 800px;
     height: 500px;
+    /* background-color: red; */
 }
 
-.image__container img{
+.image__container img {
     width: 600px;
     height: 500px;
 }
 
-table{
-    width: 820px;
+table {
+    width: 80%;
     border-top-width: 0px;
     border-bottom-width: 0px;
     border-left-width: 0px;
@@ -40,27 +51,27 @@ table{
     -webkit-border-horizontal-spacing: 0px;
     -webkit-border-vertical-spacing: 0px;
     /* background-color: blue; */
-    
+
 }
 
-tbody{
+tbody {
     display: table-row-group;
     vertical-align: middle;
     border-color: inherit;
 }
 
-tr{
+tr {
     display: table-row;
     vertical-align: inherit;
     border-color: inherit;
 }
 
-td{
+td {
     vertical-align: top;
     width: 250px;
 }
 
-td p{
+td p {
     margin-top: 0px;
     line-height: 22px;
     text-align: left;
@@ -73,7 +84,7 @@ td p{
     margin-inline-end: 0px;
 }
 
-td ul{
+td ul {
     margin-top: 0px;
     line-height: 22px;
     text-align: left;
@@ -81,23 +92,99 @@ td ul{
     /* list-style-type: disc; */
 }
 
-.greenEntry{
+.greenEntry {
     padding-top: 10px;
     color: #0b90ce;
 }
 
-.entry{
+.entry {
     padding-top: 0px;
     padding-right: 0px;
     padding-bottom: 5px;
     padding-left: 0px;
 }
 
-.detailBlock{
+.detailBlock {
     /* background-color: red; */
 }
 
 
-ul{
+ul {
     padding-inline-start: 40px;
+}
+
+/*==================MEDIA QUARIES (MEDIUM DEVICES)  ======================*/
+@media screen and (max-width: 1024px) {
+    .personal__container {
+        /* grid-template-columns: 1fr;
+        gap: 0; */
+        width: 50%;
+    }
+
+    .personal__container table {
+        /* width: auto; */
+    }
+
+    th,
+    td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    th,
+    td:nth-child(odd) {
+        border-bottom: 2px solid #ddd;
+    }
+
+    .title {
+        /* font-size:.2em; */
+    }
+
+    iframe {
+        width: 600px;
+        height: 350px;
+        /* Adjust the height for smaller screens */
+    }
+}
+
+/*==================MEDIA QUARIES (SMALL DEVICES)  ======================*/
+@media screen and (max-width: 600PX) {
+    .personal__container {
+        width: 65%;
+        margin: 0 auto 3rem;
+    }
+
+    .personal__container table {
+        /* width: 0; */
+
+    }
+
+    .title {
+        /* font-size: 2.2em; */
+    }
+
+    iframe {
+        width: 300px;
+        height: 200px;
+        /* Adjust the height for smaller screens */
+    }
+
+    .project__image {
+        background-color: green;
+        /* height: 600px; */
+        max-width:100%;
+        height: auto;
+    }
+    
+    .image__container {
+        width: 90%;
+        height: auto;
+        /* background-color: red; */
+    }
+    
+    .image__container img {
+        width: 100%;
+        height: auto;
+    }
 }

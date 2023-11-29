@@ -35,7 +35,7 @@ const PersonalProject = () => {
 
     return (
         <section>
-            <div className={`container ${classes.personal__container}`}>
+            <div className={`container personal__container}`}>
                 <h2 className={classes.title}>{project.title}</h2>
                 <center>
                     <div className={classes.project__image}>
@@ -135,7 +135,7 @@ const PersonalProject = () => {
                     <h2>
                         <strong className={classes.greenEntry}>Game trailor</strong>
                         <br></br>
-                        <iframe width="800" height="450" src='https://youtube.com/embed/ZgsQKcuzxQA3Qwg' frameborder="0" allowFullScreen></iframe>
+                        <iframe  src='https://youtube.com/embed/ZgsQKcuzxQA3Qwg' frameborder="0" allowFullScreen></iframe>
                     </h2>
                 </div>
 

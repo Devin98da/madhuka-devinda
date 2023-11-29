@@ -1,6 +1,8 @@
 header{
     /* height: 100vh; */
+    /* height: 100vh; */
     padding-top: 4rem;
+    margin-bottom: 6rem;
     overflow: hidden;
 }
 
@@ -62,14 +64,16 @@ header{
 /*==================MEDIA QUARIES (MEDIUM DEVICES)  ======================*/
 @media screen and (max-width: 1024px){
     header{
-        height: 68vh;
+        margin-bottom: 4rem;
+        /* height: 68vh; */
     }
 }
 
 /*==================MEDIA QUARIES (SMALL DEVICES)  ======================*/
 @media screen and (max-width: 600PX){
     header{
-        height: 100vh;
+        /* height: 68vh; */
+        margin-bottom: 4rem;
     }
 
     .header__socials, .scroll__down{
