@@ -41,7 +41,7 @@ const Nav = () => {
 
     <div className="container navbar">
       <div>
-        <Link className='link' to='/madhuka-devinda'>Home</Link>
+        <Link className='link' to='/'>Home</Link>
 
         {/* <div class="dropdown">
   <button class="dropbtn">Professional Projects
@@ -63,7 +63,7 @@ const Nav = () => {
             <Dropdown projects={ProjectsData} />
           </div>
         </div>
-        <Link className='link' to='/madhuka-devinda/about-resume' target='blank'>About & Resume</Link>
+        <Link className='link' to='/about-resume' target='blank'>About & Resume</Link>
       </div>
       <div className='socials'>
         <a className='social' href='https://linkedin.com' target='_blank'><BsLinkedin /></a>
