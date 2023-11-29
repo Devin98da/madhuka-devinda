@@ -63,7 +63,7 @@ const Nav = () => {
             <Dropdown projects={ProjectsData} />
           </div>
         </div>
-        <Link className='link' to='/about-resume' target='blank'>About & Resume</Link>
+        <Link className='link' to='/about-resume'>About & Resume</Link>
       </div>
       <div className='socials'>
         <a className='social' href='https://linkedin.com' target='_blank'><BsLinkedin /></a>
