@@ -12,6 +12,7 @@ import { Route, Routes } from 'react-router-dom';
 import PersonalProject from './Components/Portfolio/Porject/PersonalProject';
 import Home from './Components/Home/Home';
 import About_Resume from './Components/About_Resume/About_Resume';
+import NoRoute from './Components/NoRoute/NoRoute';
 
 const App = () => {
   return (
@@ -37,6 +38,7 @@ const App = () => {
         <Route path='/madhuka-devinda' element={<Home />}></Route>
         <Route path='/madhuka-devinda/projects/:projectId' element={<PersonalProject />}></Route>
         <Route path='/madhuka-devinda/about-resume' element={<About_Resume/>}></Route>
+        <Route path='/*' element={<NoRoute/>}></Route>
 
       </Routes>
     </>
