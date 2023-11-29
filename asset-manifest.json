@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/madhuka-devinda/static/css/main.8b5dbd9b.css",
-    "main.js": "/madhuka-devinda/static/js/main.1cc77f2c.js",
+    "main.css": "/madhuka-devinda/static/css/main.56556586.css",
+    "main.js": "/madhuka-devinda/static/js/main.b2c29cd4.js",
     "static/media/cv.pdf": "/madhuka-devinda/static/media/cv.1676dcdc83730930d888.pdf",
     "static/media/me.png": "/madhuka-devinda/static/media/me.821ecddcb9953b46bf75.png",
     "static/media/me-about.jpg": "/madhuka-devinda/static/media/me-about.fb4452e7f286d3636ef9.jpg",
@@ -10,11 +10,11 @@
     "static/media/portfolio3.jpg": "/madhuka-devinda/static/media/portfolio3.cbab42559fe73e73906f.jpg",
     "static/media/portfolio4.jpg": "/madhuka-devinda/static/media/portfolio4.6bf60cbb8fe5f7d7af5d.jpg",
     "index.html": "/madhuka-devinda/index.html",
-    "main.8b5dbd9b.css.map": "/madhuka-devinda/static/css/main.8b5dbd9b.css.map",
-    "main.1cc77f2c.js.map": "/madhuka-devinda/static/js/main.1cc77f2c.js.map"
+    "main.56556586.css.map": "/madhuka-devinda/static/css/main.56556586.css.map",
+    "main.b2c29cd4.js.map": "/madhuka-devinda/static/js/main.b2c29cd4.js.map"
   },
   "entrypoints": [
-    "static/css/main.8b5dbd9b.css",
-    "static/js/main.1cc77f2c.js"
+    "static/css/main.56556586.css",
+    "static/js/main.b2c29cd4.js"
   ]
 }
