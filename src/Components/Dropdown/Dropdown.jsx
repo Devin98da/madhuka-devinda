@@ -6,7 +6,7 @@ const Dropdown = (props) => {
 
     const dropdowns = props.projects.map((p) => {
         return (
-            <ul>
+            <ul key={p.id}>
                 <Link key={p.id} to={`/projects/${p.title}`}>{p.title}</Link>
             </ul>
         )

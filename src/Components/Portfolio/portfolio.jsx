@@ -5,6 +5,13 @@ import { Link } from 'react-router-dom';
 import { ProjectsData } from '../ProjectsData';
 
 const portfolio = () => {
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth', // Optional: smooth scrolling animation
+    })}
+
   return (
     <section id='portfolio'>
       {/* <h5>My Recent Work</h5> */}
@@ -19,10 +26,15 @@ const portfolio = () => {
                   <img src={image} alt={title}/>
                 </div>
                 <h3>{title}</h3>
+                <ul>
+                  <li>dsfm afklaf </li>
+                  <li>dsfm afklaf </li>
+                  <li>dsfm afklaf </li>
+                </ul>
                 <div className="portfolio__item-cta">
                   <a href={github} className='btn'>Github</a>
                   {/* <a href={demo} className='btn btn-primary' target='_blank'>More...</a> */}
-                  <Link to={`/projects/${title}`} className='btn btn-primary'>More....</Link>
+                  <Link to={`/projects/${title}`} onClick={scrollToTop} className='btn btn-primary'>More....</Link>
                 </div>
               </article>
             )

@@ -44,7 +44,7 @@ iframe {
 }
 
 table {
-    width: 80%;
+    width: 90%;
     border-top-width: 0px;
     border-bottom-width: 0px;
     border-left-width: 0px;
@@ -77,6 +77,9 @@ td p {
     line-height: 22px;
     text-align: left;
     font-size: 20px;
+    letter-spacing: 1.5px;
+    font-weight: 200;
+    line-height: 25px;
 
     display: block;
     margin-block-start: 1em;

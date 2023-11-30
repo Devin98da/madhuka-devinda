@@ -23,9 +23,14 @@ const PersonalProject = () => {
                 })}
             </ul>
         )
-
     }
 
+    const checkDataIsEmpty = (str) => str.trim() === ' '; 
+
+    const hasDandA = checkDataIsEmpty(project.design_analyse_doc);
+
+
+    const project_goals = listMaker(project.project_design_goals);
     const level_design_building = listMaker(project.detailed_info.level_design_building);
     const combat = listMaker(project.detailed_info.combat);
     const story_dialog = listMaker(project.detailed_info.story_dialog);
@@ -112,19 +117,19 @@ const PersonalProject = () => {
                             </td>
                             <td>
                                 <h2 className={classes.greenEntry}>Overview</h2>
-                                <p>{project.overview}</p>
-                                <h2 className={classes.greenEntry}>Project Design and Goals</h2>
-                                <ul>
-                                    <li>Create a fun level in UDK using only the default UDK assets (not including voiceover and music).</li>
-                                    <li>Demonstrate skills in combat encounter design, environment puzzle design, and level pacing.</li>
-                                    <li>Create an interesting game world and tell a compelling story based on the default UDK assets.</li>
-                                    <li>Make a level with a 3D isometric camera view to stand out from all of the first-person UDK levels.</li>
-                                </ul>
+                                <p>{
+                                    Object.keys(project.overview).map((key) => {
+                                        return <p key={key} className={classes.entry}>{project.overview[key]}</p>
+                                    })
+                                }
+                                </p>
+                                <h2 className={classes.greenEntry}>Project Design Goals</h2>
+                                {project_goals}
                                 <p>
                                     <strong className={classes.greenEntry}>Download Biscuits:</strong>
                                     <a href='https://keema98.itch.io/biscuits' target='_blank'> Download</a>
                                 </p>
-                                <p><strong className={classes.greenEntry}>Design & Anlyse Document: </strong></p>
+                                { hasDandA && <p><strong className={classes.greenEntry}>Design & Anlyse Document: </strong></p>}
 
                             </td>
                         </tr>
@@ -135,7 +140,7 @@ const PersonalProject = () => {
                     <h2>
                         <strong className={classes.greenEntry}>Game trailor</strong>
                         <br></br>
-                        <iframe  src='https://youtube.com/embed/ZgsQKcuzxQA3Qwg' frameborder="0" allowFullScreen></iframe>
+                        <iframe src='https://youtube.com/embed/ZgsQKcuzxQA3Qwg' frameborder="0" allowFullScreen></iframe>
                     </h2>
                 </div>
 
@@ -215,7 +220,7 @@ const PersonalProject = () => {
                             <strong>Combat</strong>
                         </span>
                     </p>
-                    {combat} 
+                    {combat}
                 </div>
                 {/* STORY & DIALOG */}
                 <div>
