@@ -66,43 +66,43 @@ const PersonalProject = () => {
                                 <p>
                                     <strong className={classes.greenEntry}>Engine:</strong>
                                     <br></br>
-                                    <span className={classes.tableItemData}>{project.engine}</span>
+                                    <span className={classes.entry}>{project.engine}</span>
                                     <br></br>
                                 </p>
                                 <p>
                                     <strong className={classes.greenEntry}>Language:</strong>
                                     <br></br>
-                                    <span className={classes.tableItemData}>{project.language}</span>
+                                    <span className={classes.entry}>{project.language}</span>
                                     <br></br>
                                 </p>
                                 <p>
                                     <strong className={classes.greenEntry}>Tool Used:</strong>
                                     <br></br>
-                                    <span className={classes.tableItemData}>{project.tool_used}</span>
+                                    <span className={classes.entry}>{project.tool_used}</span>
                                     <br></br>
                                 </p>
                                 <p>
                                     <strong className={classes.greenEntry}>Duratoin:</strong>
                                     <br></br>
-                                    <span className={classes.tableItemData}>{project.duration}</span>
+                                    <span className={classes.entry}>{project.duration}</span>
                                     <br></br>
                                 </p>
                                 <p>
                                     <strong className={classes.greenEntry}>Completion:</strong>
                                     <br></br>
-                                    <span className={classes.tableItemData}>{project.completoin}</span>
+                                    <span className={classes.entry}>{project.completoin}</span>
                                     <br></br>
                                 </p>
                                 <p>
                                     <strong className={classes.greenEntry}>Team Size:</strong>
                                     <br></br>
-                                    <span className={classes.tableItemData}>{project.team_size}</span>
+                                    <span className={classes.entry}>{project.team_size}</span>
                                     <br></br>
                                 </p>
                                 <p>
                                     <strong className={classes.greenEntry}>Role:</strong>
                                     <br></br>
-                                    <span className={classes.tableItemData}>
+                                    <span className={classes.entry}>
                                         {/* Story writing, level design,
                                         <br></br>
                                         game design, all gameplay scripting,
@@ -115,15 +115,21 @@ const PersonalProject = () => {
 
                             </td>
                             <td>
-                                <h2 className={classes.greenEntry}>Overview</h2>
-                                <p>{
-                                    Object.keys(project.overview).map((key) => {
-                                        return <p key={key} className={classes.entry}>{project.overview[key]}</p>
-                                    })
-                                }
+                                <p>
+                                    {/* <h2 className={classes.greenEntry}>Overview</h2> */}
+                                    <strong className={classes.greenEntry}>Overview</strong>
+
+                                    <p>{
+                                        Object.keys(project.overview).map((key) => {
+                                            return <p key={key} className={classes.entry}>{project.overview[key]}</p>
+                                        })
+                                    }
+                                    </p>
                                 </p>
-                                <h2 className={classes.greenEntry}>Project Design Goals</h2>
-                                {project_goals}
+                                <p>
+                                    <strong className={classes.greenEntry}>Project Design Goals</strong>
+                                    {project_goals}
+                                </p>
                                 <p>
                                     <strong className={classes.greenEntry}>Download Biscuits:</strong>
                                     <a href='https://keema98.itch.io/biscuits' target='_blank'> Download</a>
@@ -135,29 +141,30 @@ const PersonalProject = () => {
                     </tbody>
                 </table>
                 <hr></hr>
-                <div>
-                    <h2>
+                <div className={classes.info_content}>
+                    <p>
                         <strong className={classes.greenEntry}>Game trailor</strong>
                         <br></br>
                         <iframe src='https://youtube.com/embed/ZgsQKcuzxQA3Qwg' frameborder="0" allowFullScreen></iframe>
-                    </h2>
+                    </p>
                 </div>
 
                 <hr></hr>
-                <div>
-                    <h2>
+                <div className={classes.info_content}>
+                    <p>
                         <strong className={classes.greenEntry}>Detailed Info</strong>
-                    </h2>
-                    <p>
-                        {project.detailed_info.info[1]}
-                    </p>
-                    <br></br>
-                    <p>
-                        {project.detailed_info.info[2]}
+                        <p className={classes.entry}>
+                            {project.detailed_info.info[1]}
+                        </p>
+                        {/* <br></br> */}
+                        <p className={classes.entry}>
+                            {project.detailed_info.info[2]}
+                        </p>
                     </p>
                 </div>
-                <h2>&nbsp;</h2>
-                <div>
+                <hr></hr>
+                {/* <h2>&nbsp;</h2> */}
+                <div className={classes.info_content}>
                     <p>
                         <span>
                             <strong className={classes.greenEntry}>Level Map</strong>
@@ -167,44 +174,44 @@ const PersonalProject = () => {
                         <img src={project.detailed_info.level_map.img} />
                     </h2>
                 </div>
-                <h2>&nbsp;</h2>
-
-                <div>
+                {/* <h2>&nbsp;</h2> */}
+                <hr></hr>
+                <div className={classes.info_content}>
                     <p className={classes.greenEntry}>
                         <span>
                             <strong className={classes.greenEntry}>Level Details</strong>
                         </span>
                     </p>
-                    <p>
+                    <p className={classes.entry}>
                         {project.detailed_info.Level_details[1]}
                     </p>
                     <br></br>
-                    <p>
+                    <p className={classes.entry}> 
                         {project.detailed_info.Level_details[2]}
                     </p>
                     <br></br>
-                    <p>
+                    <p className={classes.entry}>
                         {project.detailed_info.Level_details[3]}
                     </p>
                     <br></br>
-                    <p>
+                    <p className={classes.entry}>
                         {project.detailed_info.Level_details[4]}
                     </p>
                     <br></br>
-                    <p>
+                    <p className={classes.entry}>
                         {project.detailed_info.Level_details[5]}
                     </p>
                     <br></br>
-                    <p>
+                    <p className={classes.entry}>
                         {project.detailed_info.Level_details[6]}
                     </p>
                     <br></br>
-                    <p>
+                    <p className={classes.entry}>
                         {project.detailed_info.Level_details[7]}
                     </p>
                 </div>
-
-                <div className={classes.detailBlock}>
+                <hr></hr>
+                <div className={classes.info_content}>
                     <p className={classes.greenEntry}>
                         <span>
                             <strong>Level Design & Building</strong>
@@ -213,7 +220,7 @@ const PersonalProject = () => {
                     {level_design_building}
                 </div>
                 {/* COMBAT */}
-                <div>
+                <div className={classes.info_content}>
                     <p className={classes.greenEntry}>
                         <span>
                             <strong>Combat</strong>
@@ -222,7 +229,7 @@ const PersonalProject = () => {
                     {combat}
                 </div>
                 {/* STORY & DIALOG */}
-                <div>
+                <div className={classes.info_content}>
                     <p className={classes.greenEntry}>
                         <span>
                             <strong>Story & Dialog</strong>
@@ -232,7 +239,7 @@ const PersonalProject = () => {
                 </div>
 
                 {/* DRAMETIC MOMENTS*/}
-                <div>
+                <div className={classes.info_content}>
                     <p className={classes.greenEntry}>
                         <span>
                             <strong>Dramatic Moments</strong>
@@ -241,7 +248,7 @@ const PersonalProject = () => {
                     {drametic_moments}
                 </div>
                 {/* SCRIPTING*/}
-                <div>
+                <div className={classes.info_content}>
                     <p className={classes.greenEntry}>
                         <span>
                             <strong>Scripting</strong>
@@ -250,7 +257,7 @@ const PersonalProject = () => {
                     {scripting}
                 </div>
                 {/* PLAY TESTING AND ITERATION */}
-                <div>
+                <div className={classes.info_content}>
                     <p className={classes.greenEntry}>
                         <span>
                             <strong>Playtesting & Iteration</strong>
