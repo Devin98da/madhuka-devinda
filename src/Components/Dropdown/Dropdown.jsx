@@ -1,13 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import classes from './Dropdown.module.css';
 
-const Dropdown = (props) => {
+const Dropdown = ({projects, OnClickDropDown}) => {
 
-    const dropdowns = props.projects.map((p) => {
+    const handleClickDropDown = () =>{
+            OnClickDropDown();
+        
+    }
+
+    const dropdowns = projects.map((p) => {
         return (
             <ul key={p.id}>
-                <Link key={p.id} to={`/projects/${p.title}`}>{p.title}</Link>
+                <Link key={p.id} to={`/projects/${p.title}`} onClick={handleClickDropDown}>{p.title}</Link>
             </ul>
         )
     })

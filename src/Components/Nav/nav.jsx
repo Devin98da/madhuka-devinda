@@ -31,6 +31,10 @@ const Nav = () => {
     setisMobile(!isMobile);
   }
 
+  const onClickDrop = () => {
+    setIsDropDownVisible(!isDropDownVisible);
+  }
+
   return (
     // <div className="container nav__container">
     //   <nav>
@@ -78,11 +82,12 @@ const Nav = () => {
 
           <div class="dropdown">
             <button class="dropbtn">Personal Projects
-              <i class="fa fa-caret-down"></i>
+              {/* <i class="fa fa-caret-down"></i> */}
             </button>
-            <div class="dropdown-content">
-              <Dropdown projects={ProjectsData} />
-            </div>
+            {isDropDownVisible &&
+              <div class="dropdown-content">
+                <Dropdown OnClickDropDown={onClickDrop} projects={ProjectsData} />
+              </div>}
           </div>
           <Link className='link' to='/about-resume'>About & Resume</Link>
         </div>

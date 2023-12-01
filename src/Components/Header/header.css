@@ -12,6 +12,10 @@ header{
     position: relative;
 }
 
+/* .header__container hr{
+    margin-top: 2rem;
+} */
+
 /*================ CTA ==================*/
 .cta{
     margin-top: 2.5rem;

@@ -22,14 +22,21 @@
     overflow: hidden;
 }
 
+.portfolio__item-image image{
+    width: 10rem;
+    height: 10rem;
+    display: none;
+}
+
 .portfolio__item h3{
     margin: 1.2 0 2rem;
 }
 
 .portfolio__item-cta{
+    margin-top: 1rem;
     display: flex;
     gap: 1rem;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
 }
 
 /*==================MEDIA QUARIES (MEDIUM DEVICES)  ======================*/

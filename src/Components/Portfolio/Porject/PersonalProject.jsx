@@ -18,14 +18,13 @@ const PersonalProject = () => {
         return (
             <ul className={classes.detailBlockUl}>
                 {Object.keys(obj).map((key) => {
-                    console.log(obj[key]);
                     return <li key={key} className={classes.entry}>{obj[key]}</li>
                 })}
             </ul>
         )
     }
 
-    const checkDataIsEmpty = (str) => str.trim() === ' '; 
+    const checkDataIsEmpty = (str) => str.trim() === ' ';
 
     const hasDandA = checkDataIsEmpty(project.design_analyse_doc);
 
@@ -129,7 +128,7 @@ const PersonalProject = () => {
                                     <strong className={classes.greenEntry}>Download Biscuits:</strong>
                                     <a href='https://keema98.itch.io/biscuits' target='_blank'> Download</a>
                                 </p>
-                                { hasDandA && <p><strong className={classes.greenEntry}>Design & Anlyse Document: </strong></p>}
+                                {hasDandA && <p><strong className={classes.greenEntry}>Design & Anlyse Document: </strong></p>}
 
                             </td>
                         </tr>
