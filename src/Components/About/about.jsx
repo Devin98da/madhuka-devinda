@@ -38,11 +38,11 @@ const about = () => {
               </article>
             </div> */}
           <p>
-            Hello! I'm Madhuka Devinda, a dedicated game developer with a year of hands-on experience in creating immersive and engaging gaming experiences.
+            Hello! I'm Madhuka Devinda, a dedicated game developer with more than year of hands-on experience in creating immersive and engaging gaming experiences.
             My journey in the world of game development has been challenging and fun, and storytelling, design, developent and cutting-edge technology are the thngs that I loved.
           </p>
           <p>
-            In my more tahn one-year professional journey, I've had the opportunity to work on a diverse range of projects, each of project is heped to my growth as a game developer.
+            In my more than one-year professional journey, I've had the opportunity to work on a diverse range of projects, each of project is heped to my growth as a game developer.
             From conceptualization to implementation, I've been involved in various aspects of game development, developing my coding skills, design, problem solving and story telling.
           </p>
           <p>
