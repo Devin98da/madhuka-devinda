@@ -10,7 +10,8 @@ const CTA = () => {
 
   return (
     <div className='cta'>
-      <button onClick={handleDownload}>CLikc</button>
+      <a className='btn' onClick={handleDownload}>Download CV</a>
+      {/* <button className='btn' onClick={handleDownload}>Download CV</button> */}
         {/* <a href="/madhuka-devinda.pdf" download='/madhuka-devinda.pdf' className='btn' target='blank' rel='noopener noreferrer'>Download CV</a> */}
         <a href='#contact' className='btn btn-primary'>Let's Talk</a>
     </div>
