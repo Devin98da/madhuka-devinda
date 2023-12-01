@@ -55,12 +55,13 @@ const Nav = () => {
           <Link className='link' to='/'>Home</Link>
 
           <div class="dropdown">
-            <button class="dropbtn">Personal Projects
+            <button class="dropbtn" onMouseEnter={mouseEnterHandler} >Personal Projects
               <i class="fa fa-caret-down"></i>
             </button>
-            <div class="dropdown-content">
-              <Dropdown projects={ProjectsData} />
-            </div>
+            {isDropDownVisible &&
+              <div class="dropdown-content">
+                <Dropdown OnClickDropDown={onClickDrop} projects={ProjectsData} />
+              </div>}
           </div>
           <Link className='link' to='/about-resume'>About & Resume</Link>
         </div>
@@ -81,7 +82,7 @@ const Nav = () => {
           <Link className='link' to='/'>Home</Link>
 
           <div class="dropdown">
-            <button class="dropbtn">Personal Projects
+            <button class="dropbtn" onMouseEnter={mouseEnterHandler}>Personal Projects
               {/* <i class="fa fa-caret-down"></i> */}
             </button>
             {isDropDownVisible &&
