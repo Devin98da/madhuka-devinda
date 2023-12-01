@@ -18,7 +18,7 @@ const Dropdown = ({projects, OnClickDropDown}) => {
     })
 
     return (
-        <div>
+        <div className={classes.dropdown_container}>
             {dropdowns}
 
         </div>

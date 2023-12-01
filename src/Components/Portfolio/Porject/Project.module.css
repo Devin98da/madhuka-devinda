@@ -9,7 +9,7 @@
 }
 
 .title {
-    height: 50px;
+    min-height: 100% ;
     margin-bottom: 2rem;
     border-bottom: 1px dashed #1E1E1E;
     /* font-family: Georgia, "Times New Roman", Times, serif; */

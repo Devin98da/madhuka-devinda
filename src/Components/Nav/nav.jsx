@@ -79,7 +79,7 @@ const Nav = () => {
       </div>
       {
         <div className={`nav_links_mobile ${isMobile ? 'open' : ''}`}>
-          <Link className='link' to='/'>Home</Link>
+          <Link className='link' to='/' onClick={hambergerClickHandler}>Home</Link>
 
           <div class="dropdown">
             <button class="dropbtn" onMouseEnter={mouseEnterHandler}>Personal Projects
@@ -87,10 +87,10 @@ const Nav = () => {
             </button>
             {isDropDownVisible &&
               <div class="dropdown-content">
-                <Dropdown OnClickDropDown={onClickDrop} projects={ProjectsData} />
+                <Dropdown OnClickDropDown={hambergerClickHandler} projects={ProjectsData} />
               </div>}
           </div>
-          <Link className='link' to='/about-resume'>About & Resume</Link>
+          <Link className='link' to='/about-resume' onClick={hambergerClickHandler}>About & Resume</Link>
         </div>
       }
 
