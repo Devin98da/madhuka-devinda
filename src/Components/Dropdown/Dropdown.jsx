@@ -12,7 +12,7 @@ const Dropdown = ({projects, OnClickDropDown}) => {
     const dropdowns = projects.map((p) => {
         return (
             <ul key={p.id}>
-                <Link key={p.id} to={`/projects/${p.title}`} onClick={handleClickDropDown}>{p.title}</Link>
+                <Link key={p.id} to={`/projects/${p.title}`}>{p.title}</Link>
             </ul>
         )
     })
