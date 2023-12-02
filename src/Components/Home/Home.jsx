@@ -6,6 +6,7 @@ import Portfolio from '../Portfolio/portfolio';
 import Footer from '../Footer/footer';
 // import PersonalProject from '../Portfolio/Porject/PersonalProject';
 import Contact from '../Contact/contact';
+import OlderProjects from '../Portfolio/OlderProjects/OlderProjects';
 // import { Route, Routes } from 'react-router-dom';
 
 
@@ -25,6 +26,7 @@ const Home = () => {
                 <Route path='/' element={<Contact />}></Route>
             </Routes> */}
             <Portfolio />
+            <OlderProjects />
             {/* <Routes>
 
             </Routes> */}

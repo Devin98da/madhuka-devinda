@@ -36,7 +36,7 @@ const portfolio = () => {
                   }
                 </ul>
                 <div className="portfolio__item-cta">
-                  <a href={github} className='btn'>Github</a>
+                  <a href={demo} target='blank' className='btn'>Game</a>
                   {/* <a href={demo} className='btn btn-primary' target='_blank'>More...</a> */}
                   <Link to={`/projects/${title}`} onClick={scrollToTop} className='btn btn-primary'>More....</Link>
                 </div>

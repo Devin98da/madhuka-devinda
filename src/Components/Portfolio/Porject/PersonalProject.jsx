@@ -132,7 +132,7 @@ const PersonalProject = () => {
                                 </p>
                                 <p>
                                     <strong className={classes.greenEntry}>Download Biscuits:</strong>
-                                    <a href='https://keema98.itch.io/biscuits' target='_blank'> Download</a>
+                                    <a href={project.demo} target='_blank'> Download</a>
                                 </p>
                                 {hasDandA && <p><strong className={classes.greenEntry}>Design & Anlyse Document: </strong></p>}
 
@@ -145,7 +145,7 @@ const PersonalProject = () => {
                     <p>
                         <strong className={classes.greenEntry}>Game trailor</strong>
                         <br></br>
-                        <iframe src='https://youtube.com/embed/ZgsQKcuzxQA3Qwg' frameborder="0" allowFullScreen></iframe>
+                        <iframe src={project.trailer} frameborder="0" allowFullScreen></iframe>
                     </p>
                 </div>
 

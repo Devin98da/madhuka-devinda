@@ -15,6 +15,7 @@ export const ProjectsData = [
     image: Biscuits,
     github: 'https://github.com',
     demo: 'https://keema98.itch.io/biscuits',
+    trailer:'https://youtube.com/embed/ZgsQKcuzxQA3Qwg',
     platform: 'Windows PC',
     engine: 'Unity',
     language: 'C#',
