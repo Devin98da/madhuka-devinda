@@ -4,11 +4,12 @@ import Page1 from '../../Assets/page1.jpg';
 import Page2 from '../../Assets/page2.jpg';
 import classes from './About_Resume.module.css';
 import Footer from '../Footer/footer';
+import Contact from '../Contact/contact';
 
 const About_Resume = () => {
     return (
         <section> 
-            <About />
+            <About home={false}/>
             <div className={`container ${classes.about_resume_container}`}>
                 {/* <div>
                     <h2 className={classes.title}>About Me</h2>
@@ -19,11 +20,12 @@ const About_Resume = () => {
 
                     <h2 className={classes.title}>Resume Preview</h2>
                     <div className={classes.images}>
-                        <img src={Page1} />
-                        <img src={Page2} />
+                        <img alt='Page 1' src={Page1} />
+                        <img alt='Page 2' src={Page2} />
                     </div>
                 </div>
             </div >
+            <Contact/>
             <Footer />
         </section>
     )

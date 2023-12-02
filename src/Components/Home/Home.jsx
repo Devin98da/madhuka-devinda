@@ -1,12 +1,12 @@
 import React from 'react'
 import Header from '../Header/header';
-import Nav from '../Nav/nav';
+// import Nav from '../Nav/nav';
 import About from '../About/about';
 import Portfolio from '../Portfolio/portfolio';
 import Footer from '../Footer/footer';
-import PersonalProject from '../Portfolio/Porject/PersonalProject';
+// import PersonalProject from '../Portfolio/Porject/PersonalProject';
 import Contact from '../Contact/contact';
-import { Route, Routes } from 'react-router-dom';
+// import { Route, Routes } from 'react-router-dom';
 
 
 const Home = () => {
@@ -15,7 +15,7 @@ const Home = () => {
 
             <Header />
             {/* <hr></hr> */}
-            <About />
+            <About home= {true}/>
             {/* <Experiance /> */}
             {/* /* <Services /> */}
             {/* <Routes>
@@ -25,9 +25,9 @@ const Home = () => {
                 <Route path='/' element={<Contact />}></Route>
             </Routes> */}
             <Portfolio />
-            <Routes>
+            {/* <Routes>
 
-            </Routes>
+            </Routes> */}
             {/* <Testermonial /> */}
             <Contact />
             <Footer />

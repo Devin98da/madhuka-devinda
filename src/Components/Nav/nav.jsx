@@ -1,21 +1,20 @@
 import React from 'react'
 import './nav.css';
-import { AiOutlineHome, AiOutlineUser } from 'react-icons/ai';
-import { BiBook, BiMessageSquareDetail } from 'react-icons/bi';
-import { RiServiceLine } from 'react-icons/ri';
+// import { AiOutlineHome, AiOutlineUser } from 'react-icons/ai';
+import { FaFacebookF, FaGithub, FaItchIo, FaLinkedin } from 'react-icons/fa';
+// import { BiBook, BiMessageSquareDetail } from 'react-icons/bi';
+// import { RiServiceLine } from 'react-icons/ri';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Dropdown from '../Dropdown/Dropdown';
 import { ProjectsData } from '../ProjectsData';
-import { BsLinkedin } from 'react-icons/bs';
-import { FaGithub } from 'react-icons/fa';
-import { FiDribbble } from 'react-icons/fi';
+// import { BsLinkedin } from 'react-icons/bs';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 // import classes from './nav.module.css';
 
 const Nav = () => {
-  const [activeNav, setActiveNav] = useState('#');
+  // const [activeNav, setActiveNav] = useState('#');
   const [isDropDownVisible, setIsDropDownVisible] = useState(false);
   const [isMobile, setisMobile] = useState(false);
 
@@ -23,9 +22,9 @@ const Nav = () => {
     setIsDropDownVisible(true);
   }
 
-  const mouseLeaveHandler = () => {
-    setIsDropDownVisible(false);
-  }
+  // const mouseLeaveHandler = () => {
+  //   setIsDropDownVisible(false);
+  // }
 
   const hambergerClickHandler = () => {
     setisMobile(!isMobile);
@@ -71,9 +70,10 @@ const Nav = () => {
         </div>
 
         <div className='socials'>
-          <a className='social' href='https://linkedin.com' target='_blank'><BsLinkedin /></a>
-          <a className='social' href='https://github.com' target='_blank'><FaGithub /></a>
-          <a className='social' href='https://dribble.com' target='_blank'><FiDribbble /></a>
+          <a className='social' href='https://www.linkedin.com/in/madhuka-devinda/' target='blank' title='Linkedin'><FaLinkedin /></a>
+          <a className='social' href='https:/facebook.com' target='blank' title='Facebook'><FaFacebookF /></a>
+          <a className='social' href='https://github.com/Devin98da' target='blank' title='Github'><FaGithub /></a>
+          <a className='social' href='https://keema98.itch.io/' target='blank' title='Itch.io'><FaItchIo /></a>
         </div>
 
       </div>

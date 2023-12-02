@@ -66,6 +66,7 @@ nav a.active {
 .socials {
   display: flex;
   align-items: center;
+  margin-right: 1rem;
 }
 
 .social {
@@ -74,7 +75,7 @@ nav a.active {
   /* float: left; */
   color: var(--color-light);
   /* text-align: center; */
-  margin: 8px;
+  margin: 2px;
   /* padding: 4px 6px; */
   display: flex;
   justify-content: center;

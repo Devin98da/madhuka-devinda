@@ -10,7 +10,8 @@ const portfolio = () => {
     window.scrollTo({
       top: 0,
       behavior: 'smooth', // Optional: smooth scrolling animation
-    })}
+    })
+  }
 
   return (
     <section id='portfolio'>
@@ -19,17 +20,20 @@ const portfolio = () => {
 
       <div className="container portfolio__container">
         {
-          ProjectsData.map(({id,image,title,github,demo}) =>{
-            return(
+          ProjectsData.map(({ id, image, title, github, demo, summary }) => {
+            return (
               <article key={id} className='portfolio__item'>
                 <div className="portfolio__item-image">
-                  <img src={image} alt={title}/>
+                  <img src={image} alt={title} />
                 </div>
                 <h3>{title}</h3>
+                <p>{summary}</p>
                 <ul>
-                  <li>dsfm afklaf </li>
-                  <li>dsfm afklaf </li>
-                  <li>dsfm afklaf </li>
+                  {
+                    // Object.keys(summary_list).map((key) => {
+                    //   return <li key={key} >{obj[key]}</li>
+                    // })
+                  }
                 </ul>
                 <div className="portfolio__item-cta">
                   <a href={github} className='btn'>Github</a>
