@@ -42,7 +42,7 @@ const about = ({ home }) => {
           Hello! I'm Madhuka Devinda, a dedicated game developer with more than year of hands-on experience in creating immersive and engaging gaming experiences.
           My journey in the world of game development has been challenging and fun, and storytelling, design, developent and cutting-edge technology are the thngs that I loved.
         </p>
-        <p>
+        {/* <p>
           In my more than one-year professional journey, I've had the opportunity to work on a diverse range of projects, each of project is heped to my growth as a game developer.
           From conceptualization to implementation, I've been involved in various aspects of game development, developing my coding skills, design, problem solving and story telling.
         </p>
@@ -63,7 +63,7 @@ const about = ({ home }) => {
 
         <p>
           Thank you for visiting my portfolio, and I look forward to the exciting challenges and opportunities that lie ahead in the world of game development!
-        </p>
+        </p> */}
 
         <a href='#contact' className='btn btn-primary'>Let's Talk</a>
 
