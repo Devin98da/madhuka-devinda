@@ -15,7 +15,7 @@ export const ProjectsData = [
     image: Biscuits,
     github: 'https://github.com',
     demo: 'https://keema98.itch.io/biscuits',
-    trailer:'https://youtube.com/embed/ZgsQKcuzxQA3Qwg',
+    trailer:'https://www.youtube.com/embed/XmFzyqo7aWA',
     platform: 'Windows PC',
     engine: 'Unity',
     language: 'C#',
@@ -84,7 +84,7 @@ export const ProjectsData = [
         2: 'Shooting and hitting',
         3: 'Damage and healing system',
         4: 'Player pick up objects, interaction and inventory.',
-        5: "Different enemy AIs for assassins, guardian of the nature and people who can't escape the punishment",
+        5: "Implemented dynamic enemy AI behaviors, including a 'Crazy Man,' 'Assassin,' and 'Forest Protector'",
         6: 'Saving system.',
         7: 'Jumpscares, ambient sounds and cutscenes'
       },

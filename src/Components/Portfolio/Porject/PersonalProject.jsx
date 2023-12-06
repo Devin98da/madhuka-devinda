@@ -150,20 +150,18 @@ const PersonalProject = () => {
                 </div>
 
                 <hr></hr>
-                <div className={classes.info_content}>
+                {/* <div className={classes.info_content}>
                     <p>
                         <strong className={classes.greenEntry}>Detailed Info</strong>
                         <p className={classes.entry}>
                             {project.detailed_info.info[1]}
                         </p>
-                        {/* <br></br> */}
                         <p className={classes.entry}>
                             {project.detailed_info.info[2]}
                         </p>
                     </p>
                 </div>
                 <hr></hr>
-                {/* <h2>&nbsp;</h2> */}
                 <div className={classes.info_content}>
                     <p>
                         <span>
@@ -174,7 +172,6 @@ const PersonalProject = () => {
                         <img src={project.detailed_info.level_map.img} />
                     </h2>
                 </div>
-                {/* <h2>&nbsp;</h2> */}
                 <hr></hr>
                 <div className={classes.info_content}>
                     <p className={classes.greenEntry}>
@@ -209,7 +206,7 @@ const PersonalProject = () => {
                     <p className={classes.entry}>
                         {project.detailed_info.Level_details[7]}
                     </p>
-                </div>
+                </div> */}
                 <hr></hr>
                 <div className={classes.info_content}>
                     <p className={classes.greenEntry}>
