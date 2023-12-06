@@ -1,18 +1,20 @@
 {
   "files": {
-    "main.css": "/madhuka-devinda/static/css/main.33777c6a.css",
-    "main.js": "/madhuka-devinda/static/js/main.4edefcf2.js",
+    "main.css": "/madhuka-devinda/static/css/main.4c2ce6b6.css",
+    "main.js": "/madhuka-devinda/static/js/main.d6491caa.js",
     "static/media/me.png": "/madhuka-devinda/static/media/me.821ecddcb9953b46bf75.png",
-    "static/media/page1.jpg": "/madhuka-devinda/static/media/page1.e255220701520a658cc3.jpg",
-    "static/media/page2.jpg": "/madhuka-devinda/static/media/page2.278062b2cacaff60bb9d.jpg",
+    "static/media/page1.jpg": "/madhuka-devinda/static/media/page1.b163e821c6ff98b36e60.jpg",
+    "static/media/page2.jpg": "/madhuka-devinda/static/media/page2.696244bacc509866a86f.jpg",
     "static/media/me-about.jpg": "/madhuka-devinda/static/media/me-about.a527472c78f8fbac368f.jpg",
     "static/media/biscuits.jpg": "/madhuka-devinda/static/media/biscuits.ff63456a26fbc4d5ff18.jpg",
+    "static/media/Z land.jpg": "/madhuka-devinda/static/media/Z land.e0320cc9b2c4f5dec1db.jpg",
+    "static/media/p t45.jpg": "/madhuka-devinda/static/media/p t45.1e3740160d128209ddd1.jpg",
     "index.html": "/madhuka-devinda/index.html",
-    "main.33777c6a.css.map": "/madhuka-devinda/static/css/main.33777c6a.css.map",
-    "main.4edefcf2.js.map": "/madhuka-devinda/static/js/main.4edefcf2.js.map"
+    "main.4c2ce6b6.css.map": "/madhuka-devinda/static/css/main.4c2ce6b6.css.map",
+    "main.d6491caa.js.map": "/madhuka-devinda/static/js/main.d6491caa.js.map"
   },
   "entrypoints": [
-    "static/css/main.33777c6a.css",
-    "static/js/main.4edefcf2.js"
+    "static/css/main.4c2ce6b6.css",
+    "static/js/main.d6491caa.js"
   ]
 }
