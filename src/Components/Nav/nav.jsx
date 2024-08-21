@@ -53,15 +53,17 @@ const Nav = () => {
         <div className='navlinks'>
           <Link className='link' to='/'>Home</Link>
 
-          <div class="dropdown">
-            <button class="dropbtn" onMouseEnter={mouseEnterHandler} >Personal Projects
-              <i class="fa fa-caret-down"></i>
+          <div className="dropdown">
+            <button className="dropbtn" onMouseEnter={mouseEnterHandler} >Proffesional Projects
+              <i className="fa fa-caret-down"></i>
             </button>
             {isDropDownVisible &&
-              <div class="dropdown-content">
+              <div className="dropdown-content">
                 <Dropdown OnClickDropDown={onClickDrop} projects={ProjectsData} />
               </div>}
           </div>
+          <Link className='link' to='/experience'>Experience</Link>
+
           <Link className='link' to='/about-resume'>About & Resume</Link>
         </div>
         <div className='hamberger' onClick={hambergerClickHandler}>
@@ -73,7 +75,7 @@ const Nav = () => {
           <a className='social' href='https://www.linkedin.com/in/madhuka-devinda/' target='blank' title='Linkedin'><FaLinkedin /></a>
           <a className='social' href='https:/facebook.com' target='blank' title='Facebook'><FaFacebookF /></a>
           <a className='social' href='https://github.com/Devin98da' target='blank' title='Github'><FaGithub /></a>
-          <a className='social' href='https://keema98.itch.io/' target='blank' title='Itch.io'><FaItchIo /></a>
+          {/* <a className='social' href='https://keema98.itch.io/' target='blank' title='Itch.io'><FaItchIo /></a> */}
         </div>
 
       </div>
@@ -81,15 +83,16 @@ const Nav = () => {
         <div className={`nav_links_mobile ${isMobile ? 'open' : ''}`}>
           <Link className='link' to='/' onClick={hambergerClickHandler}>Home</Link>
 
-          <div class="dropdown">
-            <button class="dropbtn" onMouseEnter={mouseEnterHandler}>Personal Projects
+          <div className="dropdown">
+            <button className="dropbtn" onMouseEnter={mouseEnterHandler}>Profesional Projects
               {/* <i class="fa fa-caret-down"></i> */}
             </button>
             {isDropDownVisible &&
-              <div class="dropdown-content">
+              <div className="dropdown-content">
                 <Dropdown OnClickDropDown={hambergerClickHandler} projects={ProjectsData} />
               </div>}
           </div>
+          <Link className='link' to='/experience' onClick={hambergerClickHandler}>Experience</Link>
           <Link className='link' to='/about-resume' onClick={hambergerClickHandler}>About & Resume</Link>
         </div>
       }

@@ -16,7 +16,7 @@ const portfolio = () => {
   return (
     <section id='portfolio'>
       {/* <h5>My Recent Work</h5> */}
-      <h2>Personal Projects</h2>
+      <h2>Professional Projects</h2>
 
       <div className="container portfolio__container">
         {
@@ -36,7 +36,7 @@ const portfolio = () => {
                   }
                 </ul>
                 <div className="portfolio__item-cta">
-                  <a href={demo} target='blank' className='btn'>Game</a>
+                  <a href={demo} target='blank' className='btn'>Live</a>
                   {/* <a href={demo} className='btn btn-primary' target='_blank'>More...</a> */}
                   <Link to={`/projects/${title}`} onClick={scrollToTop} className='btn btn-primary'>More....</Link>
                 </div>

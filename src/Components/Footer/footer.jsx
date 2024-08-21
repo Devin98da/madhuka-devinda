@@ -22,7 +22,7 @@ const footer = () => {
         <a href='https://www.linkedin.com/in/madhuka-devinda/' target='blank' title='Linkedin'><FaLinkedin /></a>
         <a href='https:/facebook.com/madhuka-devinda' target='blank' title='Facebook'><FaFacebookF /></a>
         <a href='https://github.com/Devin98da' target='blank' title='Github'><FaGithub /></a>
-        <a href='https://keema98.itch.io/' target='blank' title='Itch.io'><FaItchIo /></a>
+        {/* <a href='https://keema98.itch.io/' target='blank' title='Itch.io'><FaItchIo /></a> */}
       </div>
 
       <div className="footer__copyright">

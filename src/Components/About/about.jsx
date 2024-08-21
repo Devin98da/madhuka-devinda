@@ -39,8 +39,13 @@ const about = ({ home }) => {
           </article>
         </div> */}
         <p>
-          Hello! I'm Madhuka Devinda, a dedicated game developer with more than year of hands-on experience in creating immersive and engaging gaming experiences.
-          My journey in the world of game development has been challenging and fun, and storytelling, design, developent and cutting-edge technology are the thngs that I loved.
+          Hello! I'm Madhuka Devinda, a dedicated Software Engineer Intern with 10 months of hands-on experience in Full Stack Development, 
+          specializing in the MEAN stack. Skilled in Angular for frontend and Express.js/Node.js for backend development, 
+          I excel in creating robust, scalable solutions. 
+          I am passionate about leveraging my technical expertise to collaborate effectively within cross-functional teams. 
+          With a strong foundation in TypeScript and MongoDB, I am committed to delivering seamless user experiences 
+          and optimizing application performance. Eager to contribute innovation and problem-solving skills to dynamic projects,
+           I am poised to make significant contributions to any team.
         </p>
         {/* <p>
           In my more than one-year professional journey, I've had the opportunity to work on a diverse range of projects, each of project is heped to my growth as a game developer.
@@ -103,30 +108,46 @@ const about = ({ home }) => {
           </article>
         </div> */}
         <p>
-          Hello! I'm Madhuka Devinda, a dedicated game developer with more than year of hands-on experience in creating immersive and engaging gaming experiences.
-          My journey in the world of game development has been challenging and fun, and storytelling, design, developent and cutting-edge technology are the thngs that I loved.
+        Hello! I'm Madhuka Devinda, a passionate Software Engineer Intern with 10 months of hands-on experience in Full Stack Development, 
+        specializing in the MEAN stack. My journey in the world of software engineering has been both challenging and rewarding,
+         and I thrive on the opportunities to collaborate, innovate, and create scalable solutions.
         </p>
         <p>
-          In my more than one-year professional journey, I've had the opportunity to work on a diverse range of projects, each of project is heped to my growth as a game developer.
-          From conceptualization to implementation, I've been involved in various aspects of game development, developing my coding skills, design, problem solving and story telling.
+        Throughout my professional journey, I've had the privilege of working on a variety of projects, 
+        each contributing to my growth as a developer. From front-end development with Angular to back-end development with Node.js, 
+        I have honed my skills in creating responsive, user-friendly interfaces and robust server-side logic. 
+        My proficiency in TypeScript and MongoDB has enabled me to deliver seamless user experiences and optimize application performance.
         </p>
         <p>
-          My technical toolkit includes proficiency in Unity, C#, Adobe Photoshop, allowing me to bring ideas to life.
+        One of my significant projects was with Efito Solutions, where I played a crucial role in developing the Builder Bid application.
+         This experience allowed me to work closely with cross-functional teams, enhancing my collaborative problem-solving skills 
+         and reinforcing the importance of agile development processes.
         </p>
         <p>
-          I published my first 3D horror survival game on itch.io, and hope to publish more games in future.
+        In addition to my technical skills, I am deeply committed to continuous improvement. 
+        Staying updated with the latest industry trends and technologies is a priority for me, and 
+        I actively incorporate best practices to enhance the development workflow.
         </p>
         <p>
-          What sets me apart is not just my technical expertise but also my enthusiasm for innovation. I always need to explore new things in game development and designs.
-          I am always eager to bring fresh and exciting ideas to the world with game mechanics and game stories.
+        My technical toolkit includes:
+          <ul>
+            <li>Front-end Development: Angular, React</li>
+            <li>Back-end Development: Node.js, Express.js</li>
+            <li>Databases: MongoDB</li>
+            <li>Programming Languages: C#, JavaScript, TypeScript</li>
+            <li>Other Tools: GIT, Unity, OOP</li>
+          </ul>
+
         </p>
         <p>
-          To me, game development is not just a profession; It's about creating worlds, telling stories, and providing players with unforgettable experiences.
-          I am commited to contributing to the gaming industry and making a good positive impact through my work.
+        Beyond my technical expertise, what sets me apart is my enthusiasm for innovation and my passion for creating impactful solutions. 
+        I am always eager to explore new technologies and methodologies, bringing fresh and exciting ideas to the table.
         </p>
 
         <p>
-          Thank you for visiting my portfolio, and I look forward to the exciting challenges and opportunities that lie ahead in the world of game development!
+        Thank you for visiting my portfolio. I look forward to the exciting challenges 
+        and opportunities that lie ahead in the field of software engineering, 
+        and I am committed to making a positive impact through my work.
         </p>
 
         {/* <a href='#contact' className='btn btn-primary'>Let's Talk</a> */}

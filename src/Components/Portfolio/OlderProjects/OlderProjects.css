@@ -1,6 +1,6 @@
 .olderProjects__container {
     display: grid;
-    grid-template-columns: 1;
+    grid-template-columns: repeat(1,1fr);
     gap: 2rem;
     /* width: 40rem; */
     justify-content: space-evenly;
@@ -11,7 +11,7 @@
 
 .olderProject__item {
     background: var(--color-bg-variant);
-    padding: 1.3rem;
+    padding: 1rem;
     border-radius: 2rem;
     border: 1px solid transparent;
     transition: var(--transition);
@@ -54,7 +54,7 @@
     font-weight: 300;
 }
 
-.olderProject__item li {}
+/* .olderProject__item li {} */
 
 .olderProject__item-cta {
     margin-top: 1rem;
@@ -66,27 +66,32 @@
 /*==================MEDIA QUARIES (MEDIUM DEVICES)  ======================*/
 @media screen and (max-width: 1024px) {
     .olderProject__container {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(1,1fr);
         gap: 1.2rem;
     }
     .olderProject__item {
         width: 30rem;
+        display: flex;
+        flex-direction: column;
 
     }
     .olderProject__item-image {
-        /* width: 15rem; */
+        width: 50%;
         border-radius: 1.5rem;
         overflow: hidden;
         display: flex;
         align-items: center;
+        height: 50%;
+        margin: auto;
     }
 }
 
 /*==================MEDIA QUARIES (SMALL DEVICES)  ======================*/
 @media screen and (max-width: 600PX) {
     .olderProject__container {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(1,1fr);
         gap: 1rem;
+        width: 30rem;
     }
 
     .olderProject__item {
