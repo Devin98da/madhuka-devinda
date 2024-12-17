@@ -31,9 +31,29 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Hide scrollbar for modern browsers with fallback for older browsers */
 ::-webkit-scrollbar {
-    display: none;
+    width: 8px;
+    height: 8px;
 }
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Light grey background */
+    border-radius: 8px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #1f1f38, #2c2c6c); /* Gradient color */
+    border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #1f1f38, #2c2c6c); /* Slightly darker gradient on hover */
+}
+
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -97,6 +117,7 @@ a:hover {
 
 .btn {
     width: max-content;
+    height: 50px;
     display: inline-block;
     color: var(--color-primary);
     padding: 0.75rem 1.2rem;

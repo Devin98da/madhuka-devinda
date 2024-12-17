@@ -32,7 +32,8 @@ const PersonalProject = () => {
     }
 
     const roles_responsibilities = listMaker(project.roles_responsibilities);
-
+    const key_features = listMaker(project.key_features);
+    
     return (
         <section>
             <div className={`container personal__container}`}>
@@ -111,7 +112,11 @@ const PersonalProject = () => {
                                     <strong className={classes.greenEntry}>Roles and Responsibilities</strong>
                                     {roles_responsibilities}
                                 </p>
-
+                                {project.key_features.length > 0 && 
+                                <p>
+                                    <strong className={classes.greenEntry}>Key Features</strong>
+                                    {key_features}
+                                </p>}
 
                             </td>
                         </tr>
@@ -122,7 +127,7 @@ const PersonalProject = () => {
                 <div>
                     <div className={classes.projectScreenshot}>
                         {Object.keys(project.project_screenshots).map((ss, index) => {
-                            return <img key={index} className={classes.single_project_screenshot} src={project.project_screenshots[1]} />
+                            return <img key={index} className={classes.single_project_screenshot} src={project.project_screenshots[index]} />
                         })}
                     </div>
                 </div>
